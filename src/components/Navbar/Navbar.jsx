@@ -1,10 +1,12 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-export default function () {
+export default function Navbar() {
     return (
         <div>
-            <span>top</span>
-            <span>latest</span>
+            <NavLink to='/top'>top stories</NavLink>
+            <NavLink to='/new'>latest stories</NavLink>
+            <NavLink to='/best'>best stories</NavLink>
         </div>
     )
 }
